@@ -1,0 +1,47 @@
+$date
+	Fri Sep 06 09:41:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module amplificador_tb $end
+$var wire 1 ! S2 $end
+$var wire 1 " S1 $end
+$var wire 1 # S0 $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$scope module uut $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 # sa $end
+$var wire 1 " sb $end
+$var wire 1 ! sc $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+1!
+$end
+#20
+0!
+1"
+1%
+#40
+0"
+0%
+1#
+1$
+#60
+1%
+#80

@@ -1,0 +1,68 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "c:\iverilog\lib\ivl\system.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "c:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "c:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "c:\iverilog\lib\ivl\va_math.vpi";
+S_00000185f751b8d0 .scope module, "semaforo_tb" "semaforo_tb" 2 4;
+ .timescale -9 -9;
+v00000185f7415800_0 .var "A", 0 0;
+v00000185f74158a0_0 .var "B", 0 0;
+v00000185f7415940_0 .net "S0", 0 0, L_00000185f74159e0;  1 drivers
+v00000185f745a510_0 .net "S1", 0 0, L_00000185f7415ac0;  1 drivers
+S_00000185f751bc70 .scope module, "uut" "semaforo" 2 8, 3 18 0, S_00000185f751b8d0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sa";
+    .port_info 3 /OUTPUT 1 "sb";
+L_00000185f7519740 .functor NOT 1, v00000185f74158a0_0, C4<0>, C4<0>, C4<0>;
+L_00000185f751a0e0 .functor AND 1, v00000185f7415800_0, L_00000185f7519740, C4<1>, C4<1>;
+L_00000185f7516d40 .functor AND 1, v00000185f7415800_0, v00000185f74158a0_0, C4<1>, C4<1>;
+L_00000185f74159e0 .functor OR 1, L_00000185f751a0e0, L_00000185f7516d40, C4<0>, C4<0>;
+L_00000185f7415a50 .functor NOT 1, v00000185f7415800_0, C4<0>, C4<0>, C4<0>;
+L_00000185f7415ac0 .functor AND 1, L_00000185f7415a50, v00000185f74158a0_0, C4<1>, C4<1>;
+v00000185f75171e0_0 .net *"_ivl_0", 0 0, L_00000185f7519740;  1 drivers
+v00000185f751a200_0 .net *"_ivl_2", 0 0, L_00000185f751a0e0;  1 drivers
+v00000185f75196a0_0 .net *"_ivl_4", 0 0, L_00000185f7516d40;  1 drivers
+v00000185f751be00_0 .net *"_ivl_8", 0 0, L_00000185f7415a50;  1 drivers
+v00000185f751bea0_0 .net "a", 0 0, v00000185f7415800_0;  1 drivers
+v00000185f751bf40_0 .net "b", 0 0, v00000185f74158a0_0;  1 drivers
+v00000185f74156c0_0 .net "sa", 0 0, L_00000185f74159e0;  alias, 1 drivers
+v00000185f7415760_0 .net "sb", 0 0, L_00000185f7415ac0;  alias, 1 drivers
+    .scope S_00000185f751b8d0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "semaforo_tb.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000185f751b8d0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000185f7415800_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000185f74158a0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000185f7415800_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000185f74158a0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000185f7415800_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000185f74158a0_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000185f7415800_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000185f74158a0_0, 0, 1;
+    %delay 20, 0;
+    %vpi_call 2 23 "$display", "Teste completo" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "semaforo_tb.v";
+    "./EX1.v";

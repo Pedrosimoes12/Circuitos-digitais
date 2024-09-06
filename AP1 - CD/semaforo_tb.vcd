@@ -1,0 +1,43 @@
+$date
+	Fri Sep 06 09:37:34 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module semaforo_tb $end
+$var wire 1 ! S1 $end
+$var wire 1 " S0 $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$scope module uut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 " sa $end
+$var wire 1 ! sb $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+0#
+0"
+0!
+$end
+#20
+1!
+1$
+#40
+1"
+0!
+0$
+1#
+#60
+1$
+#80
