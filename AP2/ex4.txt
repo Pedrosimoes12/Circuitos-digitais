@@ -1,0 +1,1 @@
+4) Eles não são iguais, pois dependendo do estilo de codificação o circuito gerado é sempre diferente um do outro.

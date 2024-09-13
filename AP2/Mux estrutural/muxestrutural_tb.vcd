@@ -1,0 +1,33 @@
+$date
+	Fri Sep 13 09:32:07 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module muxestrutural_tb $end
+$var wire 1 ! y $end
+$var reg 4 " D [3:0] $end
+$var reg 2 # S [1:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 #
+b110 "
+0!
+$end
+#20
+1!
+b1 #
+#40
+b10 #
+#60
+0!
+b11 #
+#80

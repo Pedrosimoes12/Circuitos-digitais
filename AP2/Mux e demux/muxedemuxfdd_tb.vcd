@@ -1,0 +1,61 @@
+$date
+	Fri Sep 13 09:59:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module muxedemuxfdd_tb $end
+$var wire 4 ! y [3:0] $end
+$var wire 1 " ligacao $end
+$var reg 4 # D [3:0] $end
+$var reg 2 $ S [1:0] $end
+$scope module uut $end
+$var wire 2 % s [1:0] $end
+$var wire 4 & y [3:0] $end
+$var wire 1 " d $end
+$upscope $end
+$scope module uut2 $end
+$var wire 4 ' d [3:0] $end
+$var wire 2 ( s [1:0] $end
+$var wire 1 " y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+b110 '
+b0 &
+b0 %
+b0 $
+b110 #
+0"
+b0 !
+$end
+#20
+b10 !
+b10 &
+1"
+b1 $
+b1 %
+b1 (
+#40
+b100 !
+b100 &
+b10 $
+b10 %
+b10 (
+#60
+0"
+b0 !
+b0 &
+b11 $
+b11 %
+b11 (
+#80
